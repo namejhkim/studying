@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int n; //배열 요소의 개수를 정하기 위해.
+  scanf("%d", &n);
+  int ary[n]; // 배열 선언.
+  int i; // 반복문을 위한 변수.
+  for(i=0; i<n; i++)
+    {
+      scanf("%d", &ary[i]); // 배열에 n개의 정수 입력.
+    }
+  int f; // 찾아야 할 정수를 입력 받기 위해.
+  scanf("%d", &f);
+  int j;  // 찾아야 할 정수와 같은 정수의 개수 세기 위해.
+  for(i=0; i<n; i++)
+  {
+    if(ary[i]==f) j++;
+  }
+  printf("%d", j);
+  return 0;
+}
